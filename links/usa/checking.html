@@ -10,8 +10,9 @@
     <script>
     $.getJSON( "https://get.geojs.io/v1/ip/country.json", function( json ) {
 //   console.log( json );
-        if(json.country == "US"){
-            window.location.href = "https://track.flexlinkspro.com/a.ashx?foid=1166276.2253542&foc=1&fot=9999&fos=1"       
+        if(json.country == "US"  || json.country == "CA" ||  json.country == "PR" ){
+            //window.location.href = "https://track.flexlinkspro.com/a.ashx?foid=1166276.2253542&foc=1&fot=9999&fos=1"     
+            window.location.href = "https://fxo.co/7n4S"   
         }else{
             window.location.href = "https://play.google.com/store/apps/details?id=co.applist.jobsi&referrer=utm_source%3DUSA%26utm_medium%3Dredirect%26utm_campaign%3Dredirect%26utm_term%3Dmycustomjobsi"
         }
